@@ -242,8 +242,8 @@ def yolo_detect(graph,image_file):
     # filter out all the objects/boxes that don't meet thresholds
     filtered_objs = filter_objects(output.astype(np.float32), input_image.shape[1], input_image.shape[0]) # fc27 instead of fc12 for yolo_small
 
-    print('Displaying image with objects detected in GUI')
-    print('Click in the GUI window and hit any key to exit')
+    #print('Displaying image with objects detected in GUI')
+    #print('Click in the GUI window and hit any key to exit')
     #display the filtered objects/boxes in a GUI window
     #display_objects_in_gui(display_image, filtered_objs)
     print('filtered_objs:',filtered_objs)
